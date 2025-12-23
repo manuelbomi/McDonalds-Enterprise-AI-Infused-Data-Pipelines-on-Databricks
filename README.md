@@ -93,90 +93,32 @@ Multilingual translation for global operations
 
 ## High-Level Architecture
 
-## Data Pipeline Architecture
-
-```python
-┌────────────────────────┐
-│ Omni-Channel Data │
-│ Sources │
-│ ┌────────────────┐ │
-│ │ Streaming │ │
-│ │ Batch │ │
-│ │ APIs │ │
-│ └────────────────┘ │
-└──────────┬─────────────┘
-│
-▼
-┌────────────────────────┐
-│ Ingestion Layer │
-│ (Auto Loader, JDBC) │
-└──────────┬─────────────┘
-│
-▼
-┌────────────────────────┐
-│ Bronze Delta Tables │
-│ (Raw, Immutable) │
-└──────────┬─────────────┘
-│
-▼
-┌────────────────────────┐
-│ AI Transformation │
-│ • ai_classify() │
-│ • ai_extract() │
-│ • ai_mask() │
-│ • ai_translate() │
-│ • ai_summarize() │
-└──────────┬─────────────┘
-│
-▼
-┌────────────────────────┐
-│ Silver Delta Tables │
-│ (Enriched, Governed) │
-└──────────┬─────────────┘
-│
-▼
-┌────────────────────────┐
-│ Gold Data Products │
-│ (Domain-Aligned) │
-└──────────┬─────────────┘
-│
-┌───────┴───────┐
-▼ ▼ ▼
-┌─────────┐ ┌─────────┐ ┌─────────────┐
-│ BI & │ │Micro- │ │ ML Training │
-│Dash- │ │services │ │ Pipelines │
-│boards │ │ APIs │ │ │
-└─────────┘ └─────────┘ └─────────────┘
-
-```
-
-
-## **Option 3: Enhanced ASCII with Unicode**
 ```markdown
 # Medallion Architecture with AI Layer
 
 ┌───────────────────────────────────────────────┐
-│            Omni-Channel Data Sources          │
-│  🔄 Streaming │ 📦 Batch │ 🔗 APIs            │
+│          Omni-Channel Data Sources            │
+│ Streaming data │ Batch data │ APIs            │
+│(from Dine-in, Drive-thru, Delivery etc sources)     
 └───────────────────────┬───────────────────────┘
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│              Ingestion Layer                   │
+│              Ingestion Layer                  │
 │      (Auto Loader, JDBC, Partner Connectors)  │
 └───────────────────────┬───────────────────────┘
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│           Bronze Layer (Raw)                   │
-│        • Preserve raw data                    │
-│        • Append-only                         │
-│        • Schema-on-read                      │
+│              Bronze Layer (Raw)               │
+│             • Preserve raw data               │
+│             • Append-only                     │
+│             • Schema-on-read                  │
 └───────────────────────┬───────────────────────┘
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│         AI Transformation Layer                │
+│         AI Transformation Layer               │
 │  • `ai_classify()` - Fraud detection          │
 │  • `ai_extract()` - Entity extraction         │
 │  • `ai_mask()` - PII protection               │
@@ -186,113 +128,29 @@ Multilingual translation for global operations
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│           Silver Layer (Cleaned)               │
-│        • Validated data                       │
-│        • Standardized schemas                 │
-│        • Business-ready                       │
+│           Silver Layer (Cleaned)              │
+│            • Validated data                   │
+│            • Standardized schemas             │
+│            • Business-ready                   │
 └───────────────────────┬───────────────────────┘
                         │
                         ▼
 ┌───────────────────────────────────────────────┐
-│            Gold Layer (Curated)                │
-│        • Domain-aligned                       │
-│        • Aggregated metrics                   │
-│        • Feature engineered                   │
+│            Gold Layer (Curated)               │
+│            • Domain-aligned                   │
+│            • Aggregated metrics               │
+│            • Feature engineered               
 └───────────────────────┬───────────────────────┘
            ┌────────────┼────────────┐
            │            │            │
            ▼            ▼            ▼
     ┌──────────┐  ┌──────────┐  ┌──────────┐
-    │📊 BI &    │  │⚡ Micro- │  │🤖 ML     │
+    │  BI &    │  │ Micro-   │  │   ML     │
     │ Dashboard│  │ services │  │ Training │
     │          │  │ APIs     │  │ Pipeline │
     └──────────┘  └──────────┘  └──────────┘
 ```
 
-## **Option 4: Simple Text with Icons**
-```markdown
-## Data Pipeline Flow
 
-**1. 📥 Data Sources**
-   - 🔄 Streaming data (Kafka, Event Hubs)
-   - 📦 Batch files (S3, ADLS)
-   - 🔗 APIs (REST, GraphQL)
-
-**2. ⬇️ Ingestion Layer**
-   - Auto Loader for cloud storage
-   - JDBC for databases
-   - Partner connectors for SaaS apps
-
-**3. 🥉 Bronze Layer** *(Raw Delta Tables)*
-   - Raw, immutable data
-   - Schema enforcement
-   - Data quality checks
-
-**4. 🧠 AI Transformation**
-   - `ai_classify()` - Categorization
-   - `ai_extract()` - Entity extraction
-   - `ai_mask()` - Privacy protection
-   - `ai_translate()` - Language processing
-   - `ai_summarize()` - Content condensation
-
-**5. 🥈 Silver Layer** *(Cleaned Delta Tables)*
-   - Enriched with AI insights
-   - Validated and governed
-   - Ready for consumption
-
-**6. 🥇 Gold Layer** *(Curated Data Products)*
-   - Domain-aligned data marts
-   - Secure access controls
-   - Optimized for performance
-
-**7. 📤 Consumption Layer**
-   - 📊 BI & Dashboards (Tableau, Power BI)
-   - ⚡ Microservices APIs
-   - 🤖 ML Training Pipelines
-```
-
-## **Option 5: PlantUML (If Supported)**
-````markdown
-```plantuml
-@startuml
-title Data Pipeline Architecture
-
-rectangle "Omni-Channel Data Sources" as sources {
-  rectangle "Streaming" as stream
-  rectangle "Batch" as batch
-  rectangle "APIs" as apis
-}
-
-rectangle "Ingestion Layer" as ingest
-
-rectangle "Bronze Delta Tables\n(Raw, Immutable)" as bronze
-
-rectangle "AI Transformation Layer" as ai {
-  rectangle "ai_classify()"
-  rectangle "ai_extract()"
-  rectangle "ai_mask()"
-  rectangle "ai_translate()"
-  rectangle "ai_summarize()"
-}
-
-rectangle "Silver Delta Tables\n(Enriched, Governed)" as silver
-
-rectangle "Gold Data Products\n(Domain-Aligned, Secure)" as gold
-
-rectangle "BI &\nDashboards" as bi
-rectangle "Microservices\nAPIs" as api
-rectangle "ML Training\nPipelines" as ml
-
-sources --> ingest
-ingest --> bronze
-bronze --> ai
-ai --> silver
-silver --> gold
-gold --> bi
-gold --> api
-gold --> ml
-
-@enduml
-```
 
 
