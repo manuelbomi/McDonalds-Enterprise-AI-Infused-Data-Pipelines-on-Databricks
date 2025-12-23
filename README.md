@@ -30,7 +30,7 @@ While the role itself may not neccessarily be hands-on coding, this repo proves 
 
 ---
 
-🎯 Why This Matters to McDonald’s
+## Why This Matters to McDonald’s
 
 #### McDonald’s strategic priorities include:
 
@@ -54,7 +54,7 @@ While the role itself may not neccessarily be hands-on coding, this repo proves 
 
 ##### The discussion and approach in this repository highlights one aspect of the core vision. 
 
-##### <ins>From Traditional ETL :arrow_right: Intelligent Data Products</ins>
+##### <ins>From Traditional ETL to Intelligent Data Products</ins>
 
 ##### Traditional ETL pipelines:
 
@@ -67,3 +67,19 @@ While the role itself may not neccessarily be hands-on coding, this repo proves 
 - Do not understand meaning
 
 ##### *AI-Infused Pipelines transform raw data into intelligent, reusable enterprise assets.*
+
+---
+
+## Core Capabilities Demonstrated in This Project
+
+#### <ins>1. Understand Content</ins>
+Sentiment analysis, classification, summarization
+
+#### <ins>2. Automate Governance</ins>
+PII detection and masking using AI
+
+#### <ins>3. Self-Adapt</ins>
+Grammar correction, entity extraction, schema evolution
+
+#### <ins>4. Globalize</ins>
+Multilingual translation for global operations
