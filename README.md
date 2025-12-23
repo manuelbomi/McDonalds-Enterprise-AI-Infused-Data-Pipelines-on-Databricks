@@ -155,17 +155,8 @@ Multilingual translation for global operations
 
 ## Enterprise Data Ingestion Patterns
 
-| Enterprise Data Source | Ingestion Method | Pattern |
-|------------------------|------------------|---------|
-| Cloud Storage (S3, ADLS, GCS) | Auto Loader | Streaming ingestion |
-| Enterprise Systems (SAP, Oracle, Salesforce) | JDBC / Partner Connectors | Batch ingestion |
-| Streaming Platforms (Kafka, Event Hubs) | Spark Structured Streaming | Real-time |
-| Mobile & Web Apps | REST / Event APIs | Event-driven |
-| Third-Party Platforms | APIs | Scheduled jobs |
 
-## Data Ingestion Reference
-
-| Source Category | Data Source | Method | Pattern | Example Code |
+| Source Category | Data Source | Ingestion Method | Pattern | Example Code |
 |-----------------|-------------|--------|---------|--------------|
 | **Cloud Storage** | S3, ADLS, GCS | Auto Loader | Streaming | ```python<br>spark.readStream.format("cloudFiles")<br>``` |
 | **Enterprise Systems** | SAP, Oracle, Salesforce | JDBC / Connectors | Batch | ```python<br>spark.read.jdbc(url, table)<br>``` |
