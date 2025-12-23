@@ -152,3 +152,24 @@ Multilingual translation for global operations
 
 
 
+## **Option 2: Mermaid Diagram (GitHub Supported)**
+````markdown
+```mermaid
+graph TD
+    A[Omni-Channel Data Sources<br/>Streaming, Batch, APIs] --> B[Ingestion Layer<br/>Auto Loader, JDBC]
+    B --> C[Bronze Delta Tables<br/>Raw, Immutable]
+    C --> D[AI Transformation Layer<br/>ai_classify, ai_extract, ai_mask<br/>ai_translate, ai_summarize]
+    D --> E[Silver Delta Tables<br/>Enriched, Governed]
+    E --> F[Gold Data Products<br/>Domain-Aligned, Secure]
+    
+    F --> G[BI & Dashboards]
+    F --> H[Microservices APIs]
+    F --> I[ML Training Pipelines]
+    
+    style A fill:#e1f5fe
+    style C fill:#fff3e0
+    style E fill:#e8f5e8
+    style F fill:#f3e5f5
+
+
+
