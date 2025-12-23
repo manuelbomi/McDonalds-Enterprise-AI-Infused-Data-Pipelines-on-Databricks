@@ -86,7 +86,9 @@ Multilingual translation for global operations
 
 > [!IMPORTANT]
 > Please see Miscellaneous for snapshots of how AI functions are inserted on McDonald's customers' reviews data pipeline. Only the high level AI parts are shown in this project. Interested users (with .ipynb IDEs) can also download the reveiews and codes for this repository and run it as stand-alone project without the Data Lake/Unity Catalog backends.
+> An example of how AI fucntions are used on McDocnald's customers' review data is shown below:
 >
+> <img width="980" height="405" alt="Image" src="https://github.com/user-attachments/assets/dd17d2ff-0724-4abf-aa4d-3e6e0618c215" />
 > 
 
 ---
@@ -150,6 +152,10 @@ Multilingual translation for global operations
     │          │  │ APIs     │  │ Pipeline │
     └──────────┘  └──────────┘  └──────────┘
 ```
+
+## Enterprise Data Ingestion Patterns
+
+
 
 
 
