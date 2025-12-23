@@ -83,3 +83,41 @@ Grammar correction, entity extraction, schema evolution
 
 #### <ins>4. Globalize</ins>
 Multilingual translation for global operations
+
+> [!IMPORTANT]
+> Please see Miscellaneous for snapshots of how AI functions are inserted on McDonald's customers' reviews data pipeline. Only the high level AI parts are shown in this project. Interested users (with .ipynb IDEs) can also download the reveiews and codes for this repository and run it as stand-alone project without the Data Lake/Unity Catalog backends.
+>
+> 
+
+---
+
+## High-Level Architecture
+
+```[ Omni-Channel Data Sources ]
+     | 
+     v
+[ Ingestion Layer ]
+(Streaming, Batch, APIs)
+     |
+     v
+[ Bronze Delta Tables ]
+(Raw, Immutable)
+     |
+     v
+[ AI Transformation Layer ]
+(ai_classify, ai_extract,
+ ai_mask, ai_translate,
+ ai_summarize)
+     |
+     v
+[ Silver Delta Tables ]
+(Enriched, Governed)
+     |
+     v
+[ Gold Data Products ]
+(Domain-Aligned, Secure)
+     |
+     +--> BI & Dashboards
+     +--> Microservices APIs
+     +--> ML Training Pipelines
+```
