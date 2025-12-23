@@ -93,7 +93,7 @@ Multilingual translation for global operations
 
 ## High-Level Architecture
 
-```pgsql
+pgsql
 
 [ Omni-Channel Data Sources ]
      | 
@@ -123,4 +123,4 @@ Multilingual translation for global operations
      +--> Microservices APIs
      +--> ML Training Pipelines
 
-```
+
