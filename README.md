@@ -93,7 +93,9 @@ Multilingual translation for global operations
 
 ## High-Level Architecture
 
-```[ Omni-Channel Data Sources ]
+```pgsql
+
+[ Omni-Channel Data Sources ]
      | 
      v
 [ Ingestion Layer ]
@@ -120,4 +122,5 @@ Multilingual translation for global operations
      +--> BI & Dashboards
      +--> Microservices APIs
      +--> ML Training Pipelines
+
 ```
