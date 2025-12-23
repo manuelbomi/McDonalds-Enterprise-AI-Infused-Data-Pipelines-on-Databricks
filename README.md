@@ -93,34 +93,58 @@ Multilingual translation for global operations
 
 ## High-Level Architecture
 
-pgsql
+## Data Pipeline Architecture
+┌────────────────────────┐
+│ Omni-Channel Data │
+│ Sources │
+│ ┌────────────────┐ │
+│ │ Streaming │ │
+│ │ Batch │ │
+│ │ APIs │ │
+│ └────────────────┘ │
+└──────────┬─────────────┘
+│
+▼
+┌────────────────────────┐
+│ Ingestion Layer │
+│ (Auto Loader, JDBC) │
+└──────────┬─────────────┘
+│
+▼
+┌────────────────────────┐
+│ Bronze Delta Tables │
+│ (Raw, Immutable) │
+└──────────┬─────────────┘
+│
+▼
+┌────────────────────────┐
+│ AI Transformation │
+│ • ai_classify() │
+│ • ai_extract() │
+│ • ai_mask() │
+│ • ai_translate() │
+│ • ai_summarize() │
+└──────────┬─────────────┘
+│
+▼
+┌────────────────────────┐
+│ Silver Delta Tables │
+│ (Enriched, Governed) │
+└──────────┬─────────────┘
+│
+▼
+┌────────────────────────┐
+│ Gold Data Products │
+│ (Domain-Aligned) │
+└──────────┬─────────────┘
+│
+┌───────┴───────┐
+▼ ▼ ▼
+┌─────────┐ ┌─────────┐ ┌─────────────┐
+│ BI & │ │Micro- │ │ ML Training │
+│Dash- │ │services │ │ Pipelines │
+│boards │ │ APIs │ │ │
+└─────────┘ └─────────┘ └─────────────┘
 
-[ Omni-Channel Data Sources ]
-     | 
-     v
-[ Ingestion Layer ]
-(Streaming, Batch, APIs)
-     |
-     v
-[ Bronze Delta Tables ]
-(Raw, Immutable)
-     |
-     v
-[ AI Transformation Layer ]
-(ai_classify, ai_extract,
- ai_mask, ai_translate,
- ai_summarize)
-     |
-     v
-[ Silver Delta Tables ]
-(Enriched, Governed)
-     |
-     v
-[ Gold Data Products ]
-(Domain-Aligned, Secure)
-     |
-     +--> BI & Dashboards
-     +--> Microservices APIs
-     +--> ML Training Pipelines
 
 
