@@ -94,6 +94,8 @@ Multilingual translation for global operations
 ## High-Level Architecture
 
 ## Data Pipeline Architecture
+
+```python
 ┌────────────────────────┐
 │ Omni-Channel Data │
 │ Sources │
@@ -145,6 +147,8 @@ Multilingual translation for global operations
 │Dash- │ │services │ │ Pipelines │
 │boards │ │ APIs │ │ │
 └─────────┘ └─────────┘ └─────────────┘
+
+```
 
 
 
