@@ -322,33 +322,31 @@ COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 
 ## 🌐 Omni-Channel Architecture Alignment
 
-#### Omni-Channel Definition
+#### <ins>Omni-Channel</ins>: Omni-channel means customers experience McDonald’s as <ins>one brand</ins>, regardless of touchpoint.
 
-Omni-channel means customers experience McDonald’s as <ins>one brand</ins>, regardless of touchpoint.
+#### <ins>Channels Integrated</ins>:
 
-Channels Integrated
+- Mobile app
 
-Mobile app
+- In-store kiosks
 
-In-store kiosks
+- Drive-thru
 
-Drive-thru
+- Delivery platforms
 
-Delivery platforms
+- Customer support
 
-Customer support
+- Social channels
 
-Social channels
+#### <ins>AI Enables</ins>:
 
-AI Enables:
+- Consistent sentiment analysis
 
-Consistent sentiment analysis
+- Unified guest profiles
 
-Unified guest profiles
+- Cross-channel personalization
 
-Cross-channel personalization
-
-Real-time issue escalation
+- Real-time issue escalation
 
 
 
