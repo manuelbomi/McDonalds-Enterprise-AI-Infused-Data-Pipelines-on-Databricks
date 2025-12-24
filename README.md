@@ -231,6 +231,78 @@ Multilingual translation for global operations
 #### Implementation Workflow
 1. **Data Ingestion** → 2. **AI Processing** → 3. **Insights Generation**
 
+---
+
+## Domain-Driven Design Alignment
+
+### Bounded Contexts & Data Products
+
+| Bounded Context | Domain Data Product | Description |
+|-----------------|---------------------|-------------|
+| **Guest Experience** | `guest_feedback_enriched` | Enriched guest feedback with sentiment scores |
+| **Operations** | `store_service_quality` | Store performance and service metrics |
+| **Human Resources** | `employee_mentions_masked` | Employee feedback with PII protection |
+| **Marketing** | `brand_sentiment_trends` | Brand perception tracking over time |
+
+
+# Domain-Driven Data Architecture
+
+
+## 📐 Bounded Contexts Implementation
+
+| Ubiquitous Language | Domain | Data Product | Owner | Business Capability |
+|---------------------|--------|--------------|-------|---------------------|
+| Guest Feedback | **Guest Experience** | `guest_feedback_enriched` | CX Team | Customer Satisfaction |
+| Service Quality | **Operations** | `store_service_quality` | Ops Team | Service Excellence |
+| Employee Feedback | **Human Resources** | `employee_mentions_masked` | HR Team | Employee Engagement |
+| Brand Perception | **Marketing** | `brand_sentiment_trends` | Marketing Team | Brand Management |
+
+## 🎯 Key DDD Principles Applied
+
+### 1. **Bounded Contexts**
+Each domain has clear boundaries and owns its data products
+
+### 2. **Ubiquitous Language**
+Data products use business terminology, not technical jargon
+
+### 3. **Aggregate Roots**
+Delta tables serve as primary data aggregates for each domain
+
+### 4. **Anti-Corruption Layer**
+AI transformation layer translates raw data into domain models
+
+# Domain-Driven Data Mesh Architecture
+
+## Domain Data Products Matrix
+
+| Business Domain | Bounded Context | Data Product | Schema | SLA |
+|-----------------|-----------------|--------------|--------|-----|
+| **Customer Experience** | Guest Interactions | `guest_feedback_enriched` | `guest_id`, `sentiment_score`, `feedback_category` | 99.9% |
+| **Store Operations** | Service Delivery | `store_service_quality` | `store_id`, `service_score`, `wait_time`, `cleanliness` | 99.5% |
+| **Human Resources** | Employee Engagement | `employee_mentions_masked` | `mention_id`, `department`, `sentiment`, `masked_text` | 99.9% |
+| **Brand Management** | Marketing Analytics | `brand_sentiment_trends` | `date`, `channel`, `sentiment_trend`, `volume` | 99.0% |
+
+## Implementation Example
+```sql
+-- Guest Experience Domain
+CREATE TABLE guest_feedback_enriched (
+    guest_id STRING,
+    feedback_text STRING,
+    sentiment_score DECIMAL(3,2),  -- from ai_analyze_sentiment()
+    feedback_category STRING,      -- from ai_classify()
+    mentioned_employees ARRAY<STRING>,  -- from ai_extract()
+    created_at TIMESTAMP
+) USING DELTA
+COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
+```
+
+## DDD Architecture Principles
+1. **Each domain owns its data products**
+2. **Clear bounded contexts prevent ambiguity**
+3. **Data products use business language**
+4. **Domains are independently deployable**
+5. **Inter-domain communication via contracts**
+
 
 
 
