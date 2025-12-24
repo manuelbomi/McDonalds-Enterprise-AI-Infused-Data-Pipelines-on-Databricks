@@ -250,7 +250,7 @@ Multilingual translation for global operations
 
 ## 📐 Bounded Contexts Implementation
 
-| Ubiquitous Language | Domain (Bounded Context) | Data Product | Description  | Owner | Business Capability |
+| Ubiquitous Language | Domain (Bounded Context) | Domain Data Product | Description  | Owner | Business Capability |
 |---------------------|--------|--------------|-------|-----------|---------------------|
 | Guest Feedback | **Guest Experience** | `guest_feedback_enriched` | Enriched guest feedback with sentiment scores | CX Team | Customer Satisfaction |
 | Service Quality | **Operations** | `store_service_quality` | Store performance and service metric| Ops Team | Service Excellence |
