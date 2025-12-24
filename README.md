@@ -235,21 +235,6 @@ Multilingual translation for global operations
 
 ## Domain-Driven Design Alignment
 
-### Bounded Contexts & Data Products
-
-| Bounded Context | Domain Data Product | Description |
-|-----------------|---------------------|-------------|
-| **Guest Experience** | `guest_feedback_enriched` | Enriched guest feedback with sentiment scores |
-| **Operations** | `store_service_quality` | Store performance and service metrics |
-| **Human Resources** | `employee_mentions_masked` | Employee feedback with PII protection |
-| **Marketing** | `brand_sentiment_trends` | Brand perception tracking over time |
-
-
-# Domain-Driven Data Architecture
-
-
-## 📐 Bounded Contexts Implementation
-
 | Ubiquitous Language | Domain (Bounded Context) | Domain Data Product | Description  | Owner | Business Capability |
 |---------------------|--------|--------------|-------|-----------|---------------------|
 | Guest Feedback | **Guest Experience** | `guest_feedback_enriched` | Enriched guest feedback with sentiment scores | CX Team | Customer Satisfaction |
@@ -257,23 +242,27 @@ Multilingual translation for global operations
 | Employee Feedback | **Human Resources** | `employee_mentions_masked` | Employee feedback with PII protection | HR Team | Employee Engagement |
 | Brand Perception | **Marketing** | `brand_sentiment_trends` | Brand perception tracking over time | Marketing Team | Brand Management |
 
-## 🎯 Key DDD Principles Applied
+##### Each Delta table or data repository is a domain-aligned data product, not just data.
 
-### 1. **Bounded Contexts**
+### Key DDD Principles Applied
+
+#### 1. **Bounded Contexts**
 Each domain has clear boundaries and owns its data products
 
-### 2. **Ubiquitous Language**
+#### 2. **Ubiquitous Language**
 Data products use business terminology, not technical jargon
 
-### 3. **Aggregate Roots**
+#### 3. **Aggregate Roots**
 Delta tables serve as primary data aggregates for each domain
 
-### 4. **Anti-Corruption Layer**
+#### 4. **Anti-Corruption Layer**
 AI transformation layer translates raw data into domain models
+
+---
 
 # Domain-Driven Data Mesh Architecture
 
-## Domain Data Products Matrix
+#### Domain Data Products Matrix
 
 | Business Domain | Bounded Context | Data Product | Schema | SLA |
 |-----------------|-----------------|--------------|--------|-----|
@@ -296,12 +285,14 @@ CREATE TABLE guest_feedback_enriched (
 COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 ```
 
-## DDD Architecture Principles
+#### DDD Architecture Principles
 1. **Each domain owns its data products**
 2. **Clear bounded contexts prevent ambiguity**
 3. **Data products use business language**
 4. **Domains are independently deployable**
 5. **Inter-domain communication via contracts**
+
+---
 
 
 
