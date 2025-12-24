@@ -222,15 +222,15 @@ Multilingual translation for global operations
 
 ### AI Functions Reference
 
-| 🤖 AI Function | 🎯 Purpose | 📝 Example Use |
+| AI Function | Primary  Purpose | McDonald's Use Cases |
 |----------------|------------|----------------|
-| `ai_analyze_sentiment()` | Understand guest sentiment | Customer reviews, survey feedback |
-| `ai_classify()` | Route feedback to business domains | Categorize support tickets |
-| `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback |
-| `ai_mask()` | PII protection (compliance) | GDPR/CCPA compliance for customer data |
-| `ai_fix_grammar()` | Normalize text | Standardize user-generated content |
-| `ai_translate()` | Global language support | Multi-language customer support |
-| `ai_summarize()` | Executive-level insights | Condense long reports for management |
+| `ai_analyze_sentiment()` | Understand guest sentiment, i.e, sentiment analysis | Customer reviews, social media | Text | Positive/Negative/Neutral score, survey feedback |
+| `ai_classify()` | Route feedback to business domains, text categorization | Categorize support tickets, ticket routing, content tagging, spam detection |
+| `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback, identify specific customers for targeted adverts, places, products, issues |
+| `ai_mask()` | PII protection (compliance) | Compliance with GDPR, HIPAA, PCI-DSS for customer data |
+| `ai_fix_grammar()` | Normalize text | Standardize user-generated content, customer feedback cleanup |
+| `ai_translate()` | Global language support, content localization  | Multi-language customer support |
+| `ai_summarize()` | Executive-level insights, content summarization | Condense long reports for management |
 
 
 ## AI Function Capabilities
