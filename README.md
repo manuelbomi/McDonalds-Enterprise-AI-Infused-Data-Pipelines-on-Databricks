@@ -220,7 +220,7 @@ Multilingual translation for global operations
 
 
 
-### AI Functions Reference
+### AI Functions Capabilities
 
 | AI Function | Primary  Purpose | McDonald's Use Cases |
 |----------------|------------|----------------|
@@ -232,20 +232,6 @@ Multilingual translation for global operations
 | `ai_translate()` | Global language support, content localization  | Multi-language customer support |
 | `ai_summarize()` | Executive-level insights, content summarization | Condense long reports for management |
 
-
-## AI Function Capabilities
-
-| Function | Primary Purpose | Common Use Cases | Input | Output |
-|----------|----------------|------------------|-------|--------|
-| `ai_analyze_sentiment()` | Sentiment analysis | Customer feedback, reviews, social media | Text | Positive/Negative/Neutral score |
-| `ai_classify()` | Text categorization | Ticket routing, content tagging, spam detection | Text | Category labels |
-| `ai_extract()` | Entity extraction | Identify people, places, products, issues | Text | Structured entities |
-| `ai_mask()` | Privacy protection | Compliance with GDPR, HIPAA, PCI-DSS | Text with PII | Anonymized text |
-| `ai_fix_grammar()` | Text normalization | Customer feedback cleanup, content standardization | Text | Corrected text |
-| `ai_translate()` | Language translation | Global customer support, content localization | Text | Translated text |
-| `ai_summarize()` | Content summarization | Executive reports, article summaries | Long text | Condensed summary |
-
-# Databricks AI Functions Guide
 
 ## Core Functions & Applications
 
