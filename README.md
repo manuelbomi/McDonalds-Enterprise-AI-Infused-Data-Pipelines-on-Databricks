@@ -56,7 +56,7 @@ While the role itself may not neccessarily be hands-on coding, this repo proves 
 
 ##### Traditional ETL pipelines:
 
-- Break on schema changes
+- Can break on schema changes
 
 - Struggle with unstructured data
 
