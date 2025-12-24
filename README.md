@@ -412,7 +412,11 @@ COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 
 ## Miscellaneous
 
-In this segment, we present a brief overview of prototype result 
+##### In this segment, we present a brief overview of prototype results on some very small real McDonald's customers' reviews. 
+
+##### Customers' Reviews
+
+<img width="951" height="510" alt="Image" src="https://github.com/user-attachments/assets/03dc80fb-02a3-4cd9-8971-d26390c1ad34" />
 
 
 
