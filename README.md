@@ -218,18 +218,9 @@ Multilingual translation for global operations
 
 ## AI Functions Used (Enterprise-Ready)
 
-| Function | Purpose |
-|----------|---------|
-| ai_analyze_sentiment() | Understand guest sentiment |
-| ai_classify() | Route feedback to business domains |
-| ai_extract() | Extract entities (location, staff, issues) |
-| ai_mask() | PII protection (compliance) |
-| ai_fix_grammar() | Normalize text |
-| ai_translate() | Global language support |
-| ai_summarize() | Executive-level insights |
 
 
-### Databricks AI Functions Reference
+### AI Functions Reference
 
 | 🤖 AI Function | 🎯 Purpose | 📝 Example Use |
 |----------------|------------|----------------|
