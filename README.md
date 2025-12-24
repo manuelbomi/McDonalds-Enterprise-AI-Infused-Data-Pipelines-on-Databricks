@@ -222,8 +222,8 @@ Multilingual translation for global operations
 
 ### AI Functions Capabilities
 
-| AI Function | Primary  Purpose | McDonald's Use Cases |
-|----------------|------------|----------------|
+| AI Function | Primary  Purpose | McDonald's Use Cases | Business Value |
+|----------------|------------|----------------|-------------------------|
 | `ai_analyze_sentiment()` | Understand guest sentiment, i.e, sentiment analysis | Customer reviews, social media | Text | Positive/Negative/Neutral score, survey feedback |
 | `ai_classify()` | Route feedback to business domains, text categorization | Categorize support tickets, ticket routing, content tagging, spam detection |
 | `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback, identify specific customers for targeted adverts, places, products, issues |
