@@ -418,6 +418,40 @@ COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 
 <img width="951" height="510" alt="Image" src="https://github.com/user-attachments/assets/03dc80fb-02a3-4cd9-8971-d26390c1ad34" />
 
+<img width="929" height="437" alt="Image" src="https://github.com/user-attachments/assets/93d43b29-1da1-4b82-a4da-9bc627c199af" />
+
+---
+
+##### Analyze reviews
+
+<img width="980" height="405" alt="Image" src="https://github.com/user-attachments/assets/cfcf4814-8f7e-4b7d-afdb-3243f5672a8b" />
+
+---
+
+##### Extract information from reviews 
+
+<img width="999" height="462" alt="Image" src="https://github.com/user-attachments/assets/0e0bd467-b442-46fc-a233-56237089416a" />
+
+---
+
+##### Masking (PII applications)
+
+<img width="931" height="434" alt="Image" src="https://github.com/user-attachments/assets/631072d6-23e3-4b58-88b5-5d45301ce035" />
+
+---
+
+##### Summarization 
+
+<img width="975" height="456" alt="Image" src="https://github.com/user-attachments/assets/f4376ed0-9c06-4fbc-ae68-7573a49e7ad6" />
+
+---
+
+##### Translation
+
+<img width="996" height="422" alt="Image" src="https://github.com/user-attachments/assets/40b1b1ea-2122-4f1d-9492-dbe4d6ab42b3" />
+
+---
+
 
 
 
