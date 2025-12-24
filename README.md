@@ -250,12 +250,12 @@ Multilingual translation for global operations
 
 ## 📐 Bounded Contexts Implementation
 
-| Ubiquitous Language | Domain | Data Product | Owner | Business Capability |
-|---------------------|--------|--------------|-------|---------------------|
-| Guest Feedback | **Guest Experience** | `guest_feedback_enriched` | CX Team | Customer Satisfaction |
-| Service Quality | **Operations** | `store_service_quality` | Ops Team | Service Excellence |
-| Employee Feedback | **Human Resources** | `employee_mentions_masked` | HR Team | Employee Engagement |
-| Brand Perception | **Marketing** | `brand_sentiment_trends` | Marketing Team | Brand Management |
+| Ubiquitous Language | Domain (Bounded Context) | Data Product | Description  | Owner | Business Capability |
+|---------------------|--------|--------------|-------|-----------|---------------------|
+| Guest Feedback | **Guest Experience** | `guest_feedback_enriched` | Enriched guest feedback with sentiment scores | CX Team | Customer Satisfaction |
+| Service Quality | **Operations** | `store_service_quality` | Store performance and service metric| Ops Team | Service Excellence |
+| Employee Feedback | **Human Resources** | `employee_mentions_masked` | Employee feedback with PII protection | HR Team | Employee Engagement |
+| Brand Perception | **Marketing** | `brand_sentiment_trends` | Brand perception tracking over time | Marketing Team | Brand Management |
 
 ## 🎯 Key DDD Principles Applied
 
