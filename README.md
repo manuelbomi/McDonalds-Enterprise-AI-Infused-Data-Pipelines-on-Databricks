@@ -218,10 +218,6 @@ Multilingual translation for global operations
 
 ## AI Functions Used (Enterprise-Ready)
 
-
-
-### AI Functions Capabilities
-
 | AI Function | Primary  Purpose | McDonald's Use Cases | Business Value |
 |----------------|------------|----------------|-------------------------|
 | `ai_analyze_sentiment()` | Understand guest sentiment ( positive/Negative/Neutral scores, ), i.e, sentiment analysis | Customer reviews, social media sentiments | Real-time customer satisfaction monitoring |
@@ -235,20 +231,7 @@ Multilingual translation for global operations
 #### Implementation Workflow
 1. **Data Ingestion** → 2. **AI Processing** → 3. **Insights Generation**
 
-## Core Functions & Applications
 
-| Function | Purpose | Code Example | Business Value |
-|----------|---------|--------------|----------------|
-| **`ai_analyze_sentiment()`** | Analyze customer sentiment | ```python<br>df.withColumn("sentiment", <br>    ai_analyze_sentiment("feedback_text")<br>)<br>``` | Real-time customer satisfaction monitoring |
-| **`ai_classify()`** | Categorize text into domains | ```python<br>df.withColumn("category", <br>    ai_classify("ticket_text", <br>    ["billing", "technical", "sales"])<br>)<br>``` | Automated ticket routing (40% faster) |
-| **`ai_extract()`** | Extract key entities | ```python<br>df.withColumn("entities", <br>    ai_extract("review_text", <br>    ["location", "employee", "product"])<br>)<br>``` | Structured insights from unstructured data |
-| **`ai_mask()`** | Protect sensitive data | ```python<br>df.withColumn("masked_text", <br>    ai_mask("customer_text", <br>    ["email", "phone", "ssn"])<br>)<br>``` | GDPR/CCPA compliance automation |
-| **`ai_fix_grammar()`** | Normalize and correct text | ```python<br>df.withColumn("clean_text", <br>    ai_fix_grammar("user_input")<br>)<br>``` | Improved data quality for downstream processing |
-| **`ai_translate()`** | Translate between languages | ```python<br>df.withColumn("english_text", <br>    ai_translate("original_text", "en")<br>)<br>``` | Global customer support unification |
-| **`ai_summarize()`** | Create executive summaries | ```python<br>df.withColumn("summary", <br>    ai_summarize("long_report")<br>)<br>``` | 80% faster report generation for leadership |
-
-## Implementation Workflow
-1. **Data Ingestion** → 2. **AI Processing** → 3. **Insights Generation**
 
 
 
