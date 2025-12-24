@@ -260,7 +260,7 @@ AI transformation layer translates raw data into domain models
 
 ---
 
-# Domain-Driven Data Mesh Architecture
+## Domain-Driven Data Mesh Architecture
 
 #### Domain Data Products Matrix
 
