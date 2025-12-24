@@ -79,11 +79,11 @@ PII detection and masking using AI
 #### 3. <ins>Self-Adapt</ins>
 Grammar correction, entity extraction, schema evolution
 
-#### 4. <ins> lobalize</ins>
+#### 4. <ins> Globalize</ins>
 Multilingual translation for global operations
 
 > [!IMPORTANT]
-> Please see Miscellaneous for snapshots of how AI functions are inserted on McDonald's customers' reviews data. Only the high level AI parts are shown in this project. Interested users (with .ipynb IDEs) can also download the reviews and codes for this repository and run it as stand-alone project without the Data Lake/Unity Catalog backends.
+> Please see Miscellaneous for snapshots of how AI functions are inserted on McDonald's customers' reviews data. Only the high level AI parts are shown in this project. Interested readers (with .ipynb IDEs) can also download the data and codes for this repository and run it as stand-alone project without the Data Lake/Databricks Unity Catalog backends.
 > An example of how AI fucntions are used on McDocnald's customers' review data is shown below:
 >
 > <img width="980" height="405" alt="Image" src="https://github.com/user-attachments/assets/dd17d2ff-0724-4abf-aa4d-3e6e0618c215" />
