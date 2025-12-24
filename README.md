@@ -151,6 +151,8 @@ Multilingual translation for global operations
     └──────────┘  └──────────┘  └──────────┘
 ```
 
+---
+
 ## Enterprise Data Ingestion Patterns
 
 
@@ -161,6 +163,126 @@ Multilingual translation for global operations
 | **Streaming Platforms** | Kafka, Event Hubs | Structured Streaming | Real-time | ```python<br>spark.readStream.format("kafka")<br>``` |
 | **Mobile & Web Apps** | Custom Apps | REST APIs | Event-driven | Python `requests` library |
 | **Third-Party Platforms** | External Services | APIs | Scheduled | Cron jobs / Airflow DAGs |
+
+#### McDonald’s Example Sources
+
+- Mobile app reviews
+
+- In-store feedback kiosks
+
+- Delivery platform feedback
+
+- Social media monitoring
+
+- Customer support transcripts
+
+---
+
+## Databricks Setup (Free Edition + Unity Catalog)
+
+<ins>Prerequisites</ins>:
+
+- Databricks Free Edition
+
+- Unity Catalog enabled
+
+- Python notebooks
+
+<ins>Setup Steps</ins>:
+
+- Create a Databricks workspace
+
+- Enable Unity Catalog
+
+<ins>Create schemas</ins>:
+
+- bronze
+
+- silver
+
+- gold
+
+- Upload review datasets or connect APIs
+
+<ins>Run notebooks in sequence</ins>:
+
+- 01_ingest_raw_data
+
+- 02_ai_enrichment
+
+- 03_governance_masking
+
+- 04_domain_data_products
+
+---
+
+## AI Functions Used (Enterprise-Ready)
+
+| Function | Purpose |
+|----------|---------|
+| ai_analyze_sentiment() | Understand guest sentiment |
+| ai_classify() | Route feedback to business domains |
+| ai_extract() | Extract entities (location, staff, issues) |
+| ai_mask() | PII protection (compliance) |
+| ai_fix_grammar() | Normalize text |
+| ai_translate() | Global language support |
+| ai_summarize() | Executive-level insights |
+
+
+### Databricks AI Functions Reference
+
+| 🤖 AI Function | 🎯 Purpose | 📝 Example Use |
+|----------------|------------|----------------|
+| `ai_analyze_sentiment()` | Understand guest sentiment | Customer reviews, survey feedback |
+| `ai_classify()` | Route feedback to business domains | Categorize support tickets |
+| `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback |
+| `ai_mask()` | PII protection (compliance) | GDPR/CCPA compliance for customer data |
+| `ai_fix_grammar()` | Normalize text | Standardize user-generated content |
+| `ai_translate()` | Global language support | Multi-language customer support |
+| `ai_summarize()` | Executive-level insights | Condense long reports for management |
+
+### Databricks AI Functions Reference
+
+| 🤖 AI Function | 🎯 Purpose | 📝 Example Use |
+|----------------|------------|----------------|
+| `ai_analyze_sentiment()` | Understand guest sentiment | Customer reviews, survey feedback |
+| `ai_classify()` | Route feedback to business domains | Categorize support tickets |
+| `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback |
+| `ai_mask()` | PII protection (compliance) | GDPR/CCPA compliance for customer data |
+| `ai_fix_grammar()` | Normalize text | Standardize user-generated content |
+| `ai_translate()` | Global language support | Multi-language customer support |
+| `ai_summarize()` | Executive-level insights | Condense long reports for management |
+
+## AI Function Capabilities
+
+| Function | Primary Purpose | Common Use Cases | Input | Output |
+|----------|----------------|------------------|-------|--------|
+| `ai_analyze_sentiment()` | Sentiment analysis | Customer feedback, reviews, social media | Text | Positive/Negative/Neutral score |
+| `ai_classify()` | Text categorization | Ticket routing, content tagging, spam detection | Text | Category labels |
+| `ai_extract()` | Entity extraction | Identify people, places, products, issues | Text | Structured entities |
+| `ai_mask()` | Privacy protection | Compliance with GDPR, HIPAA, PCI-DSS | Text with PII | Anonymized text |
+| `ai_fix_grammar()` | Text normalization | Customer feedback cleanup, content standardization | Text | Corrected text |
+| `ai_translate()` | Language translation | Global customer support, content localization | Text | Translated text |
+| `ai_summarize()` | Content summarization | Executive reports, article summaries | Long text | Condensed summary |
+
+# Databricks AI Functions Guide
+
+## Core Functions & Applications
+
+| Function | Purpose | Code Example | Business Value |
+|----------|---------|--------------|----------------|
+| **`ai_analyze_sentiment()`** | Analyze customer sentiment | ```python<br>df.withColumn("sentiment", <br>    ai_analyze_sentiment("feedback_text")<br>)<br>``` | Real-time customer satisfaction monitoring |
+| **`ai_classify()`** | Categorize text into domains | ```python<br>df.withColumn("category", <br>    ai_classify("ticket_text", <br>    ["billing", "technical", "sales"])<br>)<br>``` | Automated ticket routing (40% faster) |
+| **`ai_extract()`** | Extract key entities | ```python<br>df.withColumn("entities", <br>    ai_extract("review_text", <br>    ["location", "employee", "product"])<br>)<br>``` | Structured insights from unstructured data |
+| **`ai_mask()`** | Protect sensitive data | ```python<br>df.withColumn("masked_text", <br>    ai_mask("customer_text", <br>    ["email", "phone", "ssn"])<br>)<br>``` | GDPR/CCPA compliance automation |
+| **`ai_fix_grammar()`** | Normalize and correct text | ```python<br>df.withColumn("clean_text", <br>    ai_fix_grammar("user_input")<br>)<br>``` | Improved data quality for downstream processing |
+| **`ai_translate()`** | Translate between languages | ```python<br>df.withColumn("english_text", <br>    ai_translate("original_text", "en")<br>)<br>``` | Global customer support unification |
+| **`ai_summarize()`** | Create executive summaries | ```python<br>df.withColumn("summary", <br>    ai_summarize("long_report")<br>)<br>``` | 80% faster report generation for leadership |
+
+## Implementation Workflow
+1. **Data Ingestion** → 2. **AI Processing** → 3. **Insights Generation**
+
+
 
 
 
