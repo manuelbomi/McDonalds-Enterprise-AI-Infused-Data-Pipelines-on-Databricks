@@ -316,9 +316,39 @@ COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 
 - Build recommendation and personalization models
 
-👉 The data product becomes the contract between teams
+👉 <ins> In this implementation, the data product becomes the contract between teams</ins>
 
 ---
+
+## 🌐 Omni-Channel Architecture Alignment
+
+#### Omni-Channel Definition
+
+Omni-channel means customers experience McDonald’s as <ins>one brand</ins>, regardless of touchpoint.
+
+Channels Integrated
+
+Mobile app
+
+In-store kiosks
+
+Drive-thru
+
+Delivery platforms
+
+Customer support
+
+Social channels
+
+AI Enables:
+
+Consistent sentiment analysis
+
+Unified guest profiles
+
+Cross-channel personalization
+
+Real-time issue escalation
 
 
 
