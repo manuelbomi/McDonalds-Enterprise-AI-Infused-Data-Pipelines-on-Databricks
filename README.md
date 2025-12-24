@@ -70,16 +70,16 @@ While the role itself may not neccessarily be hands-on coding, this repo proves 
 
 ## Core Capabilities Demonstrated in This Project
 
-#### <ins>1. Understand Content</ins>
+#### 1. <ins>Understand Content</ins>
 Sentiment analysis, classification, summarization
 
-#### <ins>2. Automate Governance</ins>
+#### 2. <ins>Automate Governance</ins>
 PII detection and masking using AI
 
-#### <ins>3. Self-Adapt</ins>
+#### 3. <ins>Self-Adapt</ins>
 Grammar correction, entity extraction, schema evolution
 
-#### <ins>4. Globalize</ins>
+#### 4. <ins> lobalize</ins>
 Multilingual translation for global operations
 
 > [!IMPORTANT]
