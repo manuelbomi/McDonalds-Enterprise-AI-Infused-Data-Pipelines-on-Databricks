@@ -50,9 +50,7 @@ While the role itself may not neccessarily be hands-on coding, this repo proves 
 
 ## Architecture Vision: AI-Infused Enterprise Data Pipelines
 
-##### While the complete architectural vision for a McDonald's Principal Achitect could be found at:   
-
-##### The discussion and approach in this repository highlights one aspect of the core vision. 
+##### While the complete architectural vision for a McDonald's Principal Achitect could be found at:   ,  ................the discussion and approach in this repository highlights one aspect of the core vision. 
 
 ##### <ins>From Traditional ETL to Intelligent Data Products</ins>
 
