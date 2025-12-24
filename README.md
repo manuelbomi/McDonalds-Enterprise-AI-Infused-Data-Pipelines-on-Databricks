@@ -224,14 +224,16 @@ Multilingual translation for global operations
 
 | AI Function | Primary  Purpose | McDonald's Use Cases | Business Value |
 |----------------|------------|----------------|-------------------------|
-| `ai_analyze_sentiment()` | Understand guest sentiment, i.e, sentiment analysis | Customer reviews, social media | Text | Positive/Negative/Neutral score, survey feedback |
-| `ai_classify()` | Route feedback to business domains, text categorization | Categorize support tickets, ticket routing, content tagging, spam detection |
-| `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback, identify specific customers for targeted adverts, places, products, issues |
-| `ai_mask()` | PII protection (compliance) | Compliance with GDPR, HIPAA, PCI-DSS for customer data |
-| `ai_fix_grammar()` | Normalize text | Standardize user-generated content, customer feedback cleanup |
-| `ai_translate()` | Global language support, content localization  | Multi-language customer support |
-| `ai_summarize()` | Executive-level insights, content summarization | Condense long reports for management |
+| `ai_analyze_sentiment()` | Understand guest sentiment, i.e, sentiment analysis | Customer reviews, social media | Text | Positive/Negative/Neutral score, survey feedback |Real-time customer satisfaction monitoring |
+| `ai_classify()` | Route feedback to business domains, text categorization | Categorize support tickets, ticket routing, content tagging, spam detection |Automated ticket routing (40% faster) |
+| `ai_extract()` | Extract entities (location, staff, issues) | Identify problem areas in feedback, identify specific customers for targeted adverts, places, products, issues |Structured insights from unstructured data |
+| `ai_mask()` | PII protection (compliance) | Compliance with GDPR, HIPAA, PCI-DSS for customer data |Improved data quality for downstream data pipelines | Automated compliance with various standards |
+| `ai_fix_grammar()` | Normalize text | Standardize user-generated content, customer feedback cleanup | Improved data quality for downstream data pipelines | 
+| `ai_translate()` | Global language support, content localization  | Multi-language customer support | Global customer support unification |
+| `ai_summarize()` | Executive-level insights, content summarization | Condense long reports for management | 80% faster report generation for leadership |
 
+#### Implementation Workflow
+1. **Data Ingestion** → 2. **AI Processing** → 3. **Insights Generation**
 
 ## Core Functions & Applications
 
