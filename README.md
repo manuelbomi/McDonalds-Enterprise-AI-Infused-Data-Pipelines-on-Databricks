@@ -378,7 +378,7 @@ COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 
 - Quality analysis from reports
 
-#### <insFinance & Insurance</ins>
+#### <ins>Finance & Insurance</ins>
 
 - Claims triage
 
@@ -386,7 +386,7 @@ COMMENT 'Domain: Guest Experience | Bounded Context: Feedback Management';
 
 - Regulatory compliance
 
-#### <insHealthcare</ins>
+#### <ins>Healthcare</ins>
 
 - Patient experience
 
